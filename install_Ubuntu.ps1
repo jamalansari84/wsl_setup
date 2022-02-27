@@ -1,6 +1,6 @@
 Add-AppxPackage .\Ubuntu.appx
 ubuntu2004.exe
-wsl exec env PWD='/mnt/c/Users/r/wsl_setup' ./wsl_setup.sh
+wsl exec env PWD='/mnt/c/Users/jamal/wsl_setup' ./wsl_setup.sh
 wsl --shutdown
 wsl --export Ubuntu-20.04 .\Ubuntu.tar
 

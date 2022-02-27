@@ -10,14 +10,14 @@ parse_git_user() {
 export PS1="\[\e[36;40m\]\$(parse_git_user)\[\e[m\]:\[\e[35;40m\]\w\[\e[m\] \\$ "
 
 toggle () {
-    if [ $(git config --get user.name) == "personal" ]; then
+    if [ $(git config --get user.name) == "workemail" ]; then
         git config --global user.name "work"
         git config --global user.email "work@email.com"
         sed -zi 's/IdentityFile ~\/.ssh\/id_ed25519/IdentityFile ~\/.ssh\/id_rsa/' ~/.ssh/config
 
     else 
-        git config --global user.name "personal"
-        git config --global user.email "personal@email"
+        git config --global user.name "jamalansari84"
+        git config --global user.email "jamalansari84@email"
         sed -zi 's/IdentityFile ~\/.ssh\/id_rsa/IdentityFile ~\/.ssh\/id_ed25519/' ~/.ssh/config
     fi
 }
