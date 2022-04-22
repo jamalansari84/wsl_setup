@@ -9,7 +9,7 @@ some hardcoded values.
 4. RAM and CPU values in `snippets/wslconfig` are meant for my specific
    workstation, i.e, 6 cores and 16 GiB.
 
-# Notes
+# Notes-
 1. I maintain multiple GitHub accounts and the logic for switching between them
    is maintained in the toggle() parse_git_user() functions as well as PS1 value
    in `snippets/bashrc_partials` feel free to remove them while forking.
